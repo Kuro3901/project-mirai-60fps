@@ -57,11 +57,13 @@ Two more pieces are needed, both bundled here:
    The placement matters: top level, not inside `[per_game]`.
 
 `switch-patch.ps1` (Windows) automates the pairing: `-Variant fps -Fps 120` builds +
-installs both halves; `-Variant v3` returns to the tested 60 fps configuration.
+installs both halves; `-Variant v3` returns to the tested 60 fps configuration. Other
+variants: `off` removes the patch, `minimal`/`v1`/`v2` install the earlier prototypes
+(shipped in `patches/`) for comparison.
 
 ## Low-latency mode
 
-Set before launching (or use the bundled `launch\run-mirai-lowlatency.cmd`):
+Set before launching (or use the bundled `run-mirai-lowlatency.cmd` at the repo root):
 
 ```
 ZAKURO_PRESENT_MODE=immediate   # fifo (default) | mailbox | immediate

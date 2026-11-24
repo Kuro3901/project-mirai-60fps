@@ -11,7 +11,7 @@ if errorlevel 1 (
     pause
     exit /b 1
 )
-echo Installed the 60 fps patch (mirai-60fps-v3-camera.ips -&gt; %MODS%\code.ips).
+echo Installed the 60 fps patch (mirai-60fps-v3-camera.ips -> %MODS%\code.ips).
 echo.
 echo Requirements:
 echo   - the game patch works on any Zakuro build

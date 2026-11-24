@@ -1,6 +1,6 @@
 # Build patches/mirai-<fps>fps.ips: the v3-camera 60 fps patch rescaled to any target fps N.
 #
-# The 60 fps patch (tools/make-60fps-v2-ips.py + v3 camera floor) is built from data that
+# The 60 fps patch (make-60fps-v2-ips.py + v3 camera floor, both kept outside this repo) is built from data that
 # scales linearly in the tick rate, because the engine is tick-driven end to end (findings
 # section 13). Stock is 30 ticks/s; at N ticks/s every per-tick step scales by 30/N:
 #

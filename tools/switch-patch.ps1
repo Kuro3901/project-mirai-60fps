@@ -9,7 +9,8 @@ param(
     [int]$Fps = 0
 )
 
-$root = "C:\Users\Kuro\Documents\Mirai"
+# repo root = parent of this script's tools\ folder, so the script works from any checkout
+$root = Split-Path -Parent $PSScriptRoot
 $mods = "$env:APPDATA\zakuro\mods\0004000000148C00"
 $target = "$mods\code.ips"
 $settings = "$env:APPDATA\zakuro\settings.toml"
