@@ -67,7 +67,7 @@ def main():
     print("wrote", path, len(out), "bytes,", len(recs), "records")
     print("  %08X -> %s (%.4f)   [was 15.0]" % (STEP_VA, struct.unpack('<f', recs[STEP_VA - BASE_VA])[0], 900.0 / n))
     print("  %08X -> %s (%.4f)   [was 0.5]" % (MULT_VA, struct.unpack('<f', recs[MULT_VA - BASE_VA])[0], 30.0 / n))
-    print("pair with %%APPDATA%%\\zakuro\\settings.toml refresh_scale = %.6f (n / 59.8281)" % (n / (268111856.0 / 4481136.0)))
+    print("pair with %%APPDATA%%\\zakuro\\settings.toml refresh_scale = %.6f (n / 59.83122)" % (n / (268111856.0 / 4481136.0)))
 
 if __name__ == "__main__":
     main()

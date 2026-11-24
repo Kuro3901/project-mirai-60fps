@@ -14,6 +14,9 @@ that unlock **Hatsune Miku: Project Mirai DX (USA)** beyond its 30 fps cap:
 - **variable tick rate** (90 / 120 / ...) via an emulator-side `refresh_scale` setting
 - **low-latency present mode** (`ZAKURO_PRESENT_MODE=immediate`, `ZAKURO_SWAP_INTERVAL=0`)
 
+Automating the setup — or want exact paths, commands, verification and rollback in
+one place? See [INSTALL.md](INSTALL.md).
+
 ## Requirements
 
 - A **legally owned copy** of *Hatsune Miku: Project Mirai DX (USA)* (CTR-P-BRXE)
@@ -53,7 +56,7 @@ Two more pieces are needed, both bundled here:
 
 3. **Pair them**: in `%APPDATA%\zakuro\settings.toml` (Linux:
    `~/.config/zakuro/settings.toml`) set, in the top-level section,
-   `refresh_scale = <fps> / 59.8281` (120 → `2.005642`, 90 → `1.504231`).
+   `refresh_scale = <fps> / 59.83122` (120 → `2.005642`, 90 → `1.504231`).
    The placement matters: top level, not inside `[per_game]`.
 
 `switch-patch.ps1` (Windows) automates the pairing: `-Variant fps -Fps 120` builds +
